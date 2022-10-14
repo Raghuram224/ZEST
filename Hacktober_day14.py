@@ -1,15 +1,11 @@
-def alphabet(N):
-    res = []
-    nes=[]
-    for idx in range(97, 97 + N):
-       r = res.append(chr(idx))
-    #print(res)
-    count=0
-    for i in range(3):
-        for j in range(26):
-            a=res[j]
-            m=a[0:j]+a[j:]
-            print(m,end="")
-        print()
-        count+=1        
-alphabet(26)
+def block_of_letter(n):
+    res = ""
+    for ind in range(97, 97 + n):
+        res = res + chr(ind)
+    w = res
+    line = ''
+    for i, j in enumerate(w):
+        line = w[i:]+w[:i]
+        print(line)
+
+block_of_letter(26)
