@@ -17,3 +17,4 @@ def count(n):
                         count+=1
         print("count's of 5:",count)
 count(n=int(input()))
+
