@@ -14,4 +14,4 @@ def func_main(n,count,index,):
     else:
         print("False")
         return False        
-func_main('bcddef', count=1, index=0)
+func_main(n=str(input()), count=1, index=0)
