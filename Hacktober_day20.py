@@ -1,8 +1,6 @@
 
 def func_main(n,count,index,):
-    a=n[index]        
-    b=n[index+1]
-    if a==b:
+    if n[index] ==n[index+1]:
         count+=1
     else:
         index+=1
