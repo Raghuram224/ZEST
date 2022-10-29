@@ -1,10 +1,10 @@
 
 # input from same line with separate space like 1 1 2 3
 def sameElements(l1,l2,i):    
-    if len(l1) == len(l2)>0:
+    if len(l1) == len(l2):
         l1.sort()
         l2.sort()
-        if i==len(l1)-1:
+        if i==len(l1):
             return True
         if l1[i]==l2[i]:
             i+=1
