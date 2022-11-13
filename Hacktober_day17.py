@@ -1,3 +1,25 @@
+def check_board(n): # this is an another patter for  check board
+    l=[]    
+    for i in range(n):
+        test=[]
+        for j  in range(n):
+            r=i+j
+            if r%2==0:
+                test.append(1)
+            else:
+                test.append(2)
+        l.append(test)
+    for i in l:
+        for j in i:
+            print(j,end=' ')
+        print()       
+
+check_board(5)
+
+
+
+
+
 
 def check_board(n):
     import numpy as np
