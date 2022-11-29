@@ -7,3 +7,4 @@ def isPalindrome(s):
         print("false")
 
 isPalindrome(str(input()))
+
