@@ -5,6 +5,7 @@ def find_ans(num,x):
         if reminder==x:
             count+=1
         num = num//10
+        
     print(count)
 
 find_ans(664,4)
