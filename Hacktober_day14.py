@@ -1,3 +1,16 @@
+#another solution
+def block_of_letter(n):
+    res = ""
+    for ind in range(97, 97 + n):
+        res = res + chr(ind)
+    w = res
+   
+    for i in range(n):        
+        print(w[i:]+w[:i])
+    
+
+block_of_letter(26)
+
 def block_of_letter(n):
     res = ""
     for ind in range(97, 97 + n):
