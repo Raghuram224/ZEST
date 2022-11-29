@@ -1,3 +1,25 @@
+#another solution
+def word_extend(word):
+    l=len(word)-1
+    if l==0:
+        return word
+    else:
+        m=(l+2)//2 #5 input will be 3
+        print(m)
+        n=m
+        temp1=''
+        temp2=''
+
+        for i in range(m):
+            temp1+=word[i]*n #3*a
+            temp2+=word[l]*n  #3*e
+            l-=1
+            n-=1
+        # print(temp1[:1])
+        # print(temp2[::-1])
+        print(temp1[:-1]+temp2[::-1])
+
+
 import math
 def program_word():    
     txt=str(input())
