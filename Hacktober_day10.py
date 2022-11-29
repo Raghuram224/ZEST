@@ -28,7 +28,8 @@ def program_word():
                     print(a[i],end="")
                     m+=1
                 slice_right+=1
-            i+=1   
+            i+=1
+            
 program_word()
 
         
