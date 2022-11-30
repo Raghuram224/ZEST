@@ -6,3 +6,4 @@ def sequence(a):
         total+=int(i)
     print(total)
 sequence("5;7;1") #enter inputs in string
+
