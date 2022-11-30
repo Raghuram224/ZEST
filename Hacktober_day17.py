@@ -16,24 +16,21 @@ def check_board(n): # this is an another patter for  check board
 
 check_board(5)
 
-
+#old code
 
 def check_board(n):
     import numpy as np
     a = np.array([1]) #normal list
     print(a)
     x = np.tile(a,(n,n)) #it will creatte nxn array a wil be value of 1
-    x[1::2, ::2] = 2  #it  wil add even rows with num 2 one after another
-    x[::2, 1::2] = 2 # it will add odd rowss with num 3 one after another
+    x[1::2, ::2] = 2  #1 la irukuradhu 2 row 1::2 and ::2 every 2 element will be 2
+    x[::2, 1::2] = 2 # ::2 1 la irukuradhu every 2 row ku munnadi 1 st row 1:: 2 element will be 2
     for i in x:
         for i in i:
             print(i,"",end="")
         print()
 
 check_board(n = int(input()))
-
-
-
  
 
 
