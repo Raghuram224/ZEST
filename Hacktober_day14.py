@@ -9,7 +9,6 @@ def block_of_letter(n):
         print(w[i:]+w[:i])
     
 
-block_of_letter(26)
 
 def block_of_letter(n):
     res = ""
@@ -17,8 +16,9 @@ def block_of_letter(n):
         res = res + chr(ind)
     w = res
     line = ''
-    for i, j in enumerate(w):
-        line = w[i:]+w[:i]
+    
+    for i, j in enumerate(w): #i=0 and j=a
+        line = w[i:]+w[:i]      #bcde +a
         print(line)
 
-block_of_letter(26)
+block_of_letter(5)
