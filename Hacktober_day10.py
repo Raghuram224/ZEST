@@ -18,7 +18,8 @@ def word_extend(word):
         # print(temp1[:1])
         # print(temp2[::-1])
         print(temp1[:-1]+temp2[::-1])
-
+        
+#old solution
 
 import math
 def program_word():    
@@ -29,7 +30,7 @@ def program_word():
             a.append(i)    
         index=math.floor(len(txt)/2)  
         slice_left = index+1
-        slice_right = 2
+        slice_right = 2 #red after e one time prints d to 2 time print so 2
         i =0
         while(i<len(txt)):
             if(i==index):
@@ -42,16 +43,14 @@ def program_word():
                 while(j<slice_left):
                     print(a[i],end="")
                     j+=1
-                slice_left-=1
+                slice_left-=1  #rrr after we need to decrese count so ee so decrement
             
             elif(i>index):
                 m=0
                 while(m<slice_right):
                     print(a[i],end="")
                     m+=1
-                slice_right+=1
+                slice_right+=1  #dd after we need to increase count so eee so increment
             i+=1
             
 program_word()
-
-        
