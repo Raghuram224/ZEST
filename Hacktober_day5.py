@@ -7,3 +7,4 @@ if (a and b and c > 0):
         print("false")
 else:
     print("false")
+    
